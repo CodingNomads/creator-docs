@@ -24,7 +24,11 @@ Let's describe what each of them represent:
 
 In this diagram you saw a visual description of the different elements as they appear on our platform.
 
+---
+
 # Structure
+
+The following points give guidance on how to structure your technical writing to improve readability and help readers to learn from your material.
 
 ## 3-Step Principle
 
@@ -70,6 +74,8 @@ Attempt to follow these three simple steps even for short sections. Our brain pr
 
 # Formatting
 
+The following points provide guidance on how to format your technical writing for consistency and readability.
+
 ## Consistency
 
 **Be consistent:** Just like in programming, there are many correct ways of formatting your content. Please adhere to this style guide to allow consistency across all CodingNomads courses. And, most importantly, be consistent within your own course materials.
@@ -86,8 +92,11 @@ Attempt to follow these three simple steps even for short sections. Our brain pr
 
 **Use "you" instead of "we":** Talking directly to your student makes them feel personally addressed and more engaged. (e.g. "The project you'll be working with...")
 
+---
 
 # Tone
+
+The following points give guidance on what to look out for in terms of tone and word choice when creating technical tutorials.
 
 ## General Tone
 
@@ -114,6 +123,8 @@ Attempt to follow these three simple steps even for short sections. Our brain pr
 **Feel free to have some fun!** We want our students to enjoy our courses as much as possible and laugh as often as possible! :)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7TtIHUrcuzY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 
 # Images
 
