@@ -7,6 +7,34 @@ Quiz questions are primarily meant as a chance for students to become active in 
 
 This is why we suggest to use **multiple-choice** or **true/false** questions. We have experimented with using other question types of the many that our learning platform offers, but keeping it simple has proven to be the best way to go in terms of quizzes.
 
+## Importing Quiz Questions
+
+Moodle supports a text format called `.gift` for importing quiz questions. The format is human-readable, which makes it a good option to create your quiz questions alongside your Markdown content, and keep them version-controlled, but be able to quickly add them to your course on the platform.
+
+The screencast below walks you over how to create questions in this format and upload them to the platform:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zdrdh_Y7HWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+To learn more, read over this concise <a href='http://buypct.com/gift_reference.pdf' target='_blank'>GIFT Reference sheet</a>, or download it from the <a href='https://drive.google.com/drive/folders/1m6jfPz803rZMDp1vLDKQz72nCLzek_UA' target='_blank'>Resources Folder</a>.
+
+Here are two example questions written in `.gift` format, the first one being a multiple-choice question, the second one a True/False one:
+
+```text
+Do you like this format? {
+    ~no
+    ~maybe
+    =YESSSS!
+}
+
+Uploading quiz questions saves some of your valuable time {TRUE}
+```
+
+Check out the screencast and the linked reference sheet to learn about additional options, such as question feedback, answer percentages, question names, and automatically adding questions to categories.
+
+If you want to create your questions directly on the platform instead of going down the `.gift` route, keep reading below for some information to keep in mind.
+
+---
+
 ## Multiple Choice and Single Choice Questions
 
 Choose the appropriate type when creating a question. Make sure that the following settings are applied:
