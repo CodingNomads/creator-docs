@@ -30,9 +30,9 @@ In this diagram you saw a visual description of the different elements as they a
 
 The following points give guidance on how to structure your technical writing to improve readability and help readers to learn from your material.
 
-## 3-Step Principle
+## Three-Step Principle
 
-**Follow the 3-step-teaching principle:** Many have recommended to use this structure, and we do too.
+**Follow the three-step-teaching principle:** Many have recommended to use this structure, and we do too.
 
 1. **Intro:** Tell your students what information you will give them
 2. **Main:** Give them that info
