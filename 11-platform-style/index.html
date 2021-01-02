@@ -214,16 +214,12 @@
 <p>Switch off blue and yellow tags for better visual grouping.</p>
 <p>Blue:</p>
 <pre><code class="language-html">&lt;div class=&quot;d-flex flex-row-reverse&quot;&gt;
-  &lt;span class=&quot;badge badge-pill badge-primary&quot;&gt;
-      Module 1
-  &lt;/span&gt;
+  &lt;span class=&quot;badge badge-pill badge-primary&quot;&gt; Module 1 &lt;/span&gt;
 &lt;/div&gt;
 </code></pre>
 <p>Yellow:</p>
 <pre><code class="language-html">&lt;div class=&quot;d-flex flex-row-reverse&quot;&gt;
-  &lt;span class=&quot;badge badge-pill badge-warning&quot;&gt;
-    Module 2
-  &lt;/span&gt;
+  &lt;span class=&quot;badge badge-pill badge-warning&quot;&gt; Module 2 &lt;/span&gt;
 &lt;/div&gt;
 </code></pre>
 <p><img alt="Tags for grouping sections together into modules" src="../imgs/module-tags.png" /></p>
@@ -271,7 +267,7 @@
 <p><strong>Note:</strong> If you need to use <strong>multiple lines</strong> in your alert boxes, use <code>&lt;br&gt;</code> tags to create newlines (instead of using <code>&lt;p&gt;</code> tags). This results in nicer-looking alert boxes without additional spacing.</p>
 <h4 id="code-blocks">Code Blocks<a class="headerlink" href="#code-blocks" title="Permanent link">&para;</a></h4>
 <p>Wrap code snippets into triple-backticks. This works both in Markdown as well as the visual editor:</p>
-<pre><code>```
+<pre><code>```python
 print("your code here")
 ```
 </code></pre>
@@ -281,13 +277,13 @@ print("your code here")
 <p><strong>In the visual editor</strong>, there is no button for marking a section of text as inline code. Therefore, you will need to switch to the <em>HTML editor</em> and wrap in-line code snippets into <code>&lt;code&gt;your_code()&lt;/code&gt;</code> tags.</p>
 <h4 id="embedded-resources">Embedded Resources<a class="headerlink" href="#embedded-resources" title="Permanent link">&para;</a></h4>
 <p>For external videos that are not hosted on our vimeo account and e.g. external code playgrounds, use <a href="https://getbootstrap.com/docs/4.0/utilities/embed/">Bootstraps responsive embed class</a>:</p>
-<pre><code>&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+<pre><code class="language-html">&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
   &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;your_embed_url&quot; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </code></pre>
 <h4 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h4>
 <pre><code class="language-html">&lt;div class=&quot;jumbotron resources&quot;&gt;
-&lt;h1&gt;Resources&lt;/h1&gt;
+  &lt;h1&gt;Resources&lt;/h1&gt;
 &lt;/div&gt;
 </code></pre>
 <p>Paste the above HTML snippet into the HTML editor of your resource. Next, switch back to the WYSIWYG editor view and copy-paste your resource links into the body of the jumbotron. Style them as a bullet point list. Result:</p>
@@ -295,8 +291,19 @@ print("your code here")
 <h4 id="quotes">Quotes<a class="headerlink" href="#quotes" title="Permanent link">&para;</a></h4>
 <p>To highlight a section of your documentation as a quote, please use the <a href="https://getbootstrap.com/docs/4.0/content/typography/#blockquotes">Bootstrap-provided blockquote HTML</a>:</p>
 <pre><code class="language-html">&lt;blockquote class=&quot;blockquote text-right&quot;&gt;
-  &lt;p class=&quot;mb-0&quot;&gt;[...] programs must be written for people to read, and only incidentally for machines to execute.&lt;/p&gt;
-  &lt;footer class=&quot;blockquote-footer&quot;&gt;Abelson &amp; Sussman in &lt;a href=&quot;https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-7.html#%_chap_Temp_4&quot;&gt;&lt;cite title=&quot;Structure and Interpretation of Computer Programs&quot;&gt;Structure and Interpretation of Computer Programs&lt;/cite&gt;&lt;/a&gt;&lt;/footer&gt;
+  &lt;p class=&quot;mb-0&quot;&gt;
+    [...] programs must be written for people to read, and only incidentally for
+    machines to execute.
+  &lt;/p&gt;
+  &lt;footer class=&quot;blockquote-footer&quot;&gt;
+    Abelson &amp; Sussman in
+    &lt;a
+      href=&quot;https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-7.html#%_chap_Temp_4&quot;
+      &gt;&lt;cite title=&quot;Structure and Interpretation of Computer Programs&quot;
+        &gt;Structure and Interpretation of Computer Programs&lt;/cite
+      &gt;&lt;/a
+    &gt;
+  &lt;/footer&gt;
 &lt;/blockquote&gt;
 </code></pre>
 <p>We are applying some custom CSS to it to make the quotes look like shown below:</p>
@@ -337,8 +344,12 @@ print("your code here")
 <h2 id="brand-colors">Brand Colors<a class="headerlink" href="#brand-colors" title="Permanent link">&para;</a></h2>
 <p>In case you need to highlight something, focus on using the following colors that reflect the colors in the CodingNomads logo:</p>
 <ul>
-<li><strong>primary:</strong> sea blue</li>
-<li>Hex value: <code>#0071BD</code></li>
+<li>
+<p><strong>primary:</strong> sea blue</p>
+</li>
+<li>
+<p>Hex value: <code>#0071BD</code></p>
+</li>
 <li>RGB code: <code>rbg(0, 113, 189)</code></li>
 <li>
 <p>HSV: <code>hsv(204.13, 100%, 74.12%)</code></p>
