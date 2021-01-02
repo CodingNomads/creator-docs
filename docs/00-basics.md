@@ -37,13 +37,13 @@ Reflection is essential for retention of learned content, which is why it helps 
 
 ---
 
-# How To Duplicate a Resource
+## How To Duplicate a Resource
 
 Starting with our copied skeleton course resource, the easiest may be to duplicate a resource and then replace the content. This is the recommended way of starting to build your course, since it keeps important settings intact. The following video shows you how to duplicate an existing resource in our platform:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fSOzDZjKlIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# How to Duplicate a Section From Another Course
+## How to Duplicate a Section From Another Course
 
 **Note:** You will probably _not_ need to do this, but since it has come up, here are the steps.
 

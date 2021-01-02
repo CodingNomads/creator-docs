@@ -38,7 +38,6 @@ To improve the visual flow in a course overview, you can add colored bars to fur
 <h5 class="section-assignment">Assignments</h5>
 ```
 
-
 #### Module Tags
 
 Module tags in the "Summary" of each section help students stay on track and visually bundle multiple sections logically together.
@@ -51,9 +50,7 @@ Blue:
 
 ```html
 <div class="d-flex flex-row-reverse">
-  <span class="badge badge-pill badge-primary">
-      Module 1
-  </span>
+  <span class="badge badge-pill badge-primary"> Module 1 </span>
 </div>
 ```
 
@@ -61,9 +58,7 @@ Yellow:
 
 ```html
 <div class="d-flex flex-row-reverse">
-  <span class="badge badge-pill badge-warning">
-    Module 2
-  </span>
+  <span class="badge badge-pill badge-warning"> Module 2 </span>
 </div>
 ```
 
@@ -99,11 +94,11 @@ In **Markdown**, use the equivalent heading levels that the visual editor uses:
 
 Add disclaimers as `alert alert-warning` boxes when a new concept is mentioned but not yet deeply explained. You want to avoid students feeling like this (student quote):
 
->you know, I think my main issue is if I get to a page, and the way it is written implies I should already understand it, but it is completely new and unfamiliar. It has me worrying that it is obvious and I am the only one just not getting it.
+> you know, I think my main issue is if I get to a page, and the way it is written implies I should already understand it, but it is completely new and unfamiliar. It has me worrying that it is obvious and I am the only one just not getting it.
 
 To avoid this frustration, use the Bootstrap alert box with a short note for criticial information and gotchas. E.g.:
 
->"Just read over this for now, we'll dig deeper into it in a later section."
+> "Just read over this for now, we'll dig deeper into it in a later section."
 
 ```html
 <div class="alert alert-warning" role="alert">
@@ -129,12 +124,11 @@ The Bootstrap alert boxes also help to visually break up a long piece of content
 
 Wrap code snippets into triple-backticks. This works both in Markdown as well as the visual editor:
 
-    ```
+    ```python
     print("your code here")
     ```
 
 **Note:** Syntax highlighting can sometimes be broken. This might be annoying and we hope to find a fix that'll solve it site-wise.
-
 
 #### In-line Code
 
@@ -146,7 +140,7 @@ Wrap code snippets into triple-backticks. This works both in Markdown as well as
 
 For external videos that are not hosted on our vimeo account and e.g. external code playgrounds, use [Bootstraps responsive embed class](https://getbootstrap.com/docs/4.0/utilities/embed/):
 
-```
+```html
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="your_embed_url" allowfullscreen></iframe>
 </div>
@@ -156,7 +150,7 @@ For external videos that are not hosted on our vimeo account and e.g. external c
 
 ```html
 <div class="jumbotron resources">
-<h1>Resources</h1>
+  <h1>Resources</h1>
 </div>
 ```
 
@@ -170,8 +164,19 @@ To highlight a section of your documentation as a quote, please use the [Bootstr
 
 ```html
 <blockquote class="blockquote text-right">
-  <p class="mb-0">[...] programs must be written for people to read, and only incidentally for machines to execute.</p>
-  <footer class="blockquote-footer">Abelson & Sussman in <a href="https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-7.html#%_chap_Temp_4"><cite title="Structure and Interpretation of Computer Programs">Structure and Interpretation of Computer Programs</cite></a></footer>
+  <p class="mb-0">
+    [...] programs must be written for people to read, and only incidentally for
+    machines to execute.
+  </p>
+  <footer class="blockquote-footer">
+    Abelson & Sussman in
+    <a
+      href="https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-7.html#%_chap_Temp_4"
+      ><cite title="Structure and Interpretation of Computer Programs"
+        >Structure and Interpretation of Computer Programs</cite
+      ></a
+    >
+  </footer>
 </blockquote>
 ```
 
@@ -182,7 +187,6 @@ We are applying some custom CSS to it to make the quotes look like shown below:
 #### LaTeX
 
 If you use LaTeX for formulas, you'll have an easier time using the WYSIWYG editor. You can render block and inline LaTeX by following [moodle's LaTeX syntax](https://docs.moodle.org/38/en/Using_TeX_Notation). Here's [how to switch your editor](02-markdown-course-creation.md#text-editor-choice).
-
 
 If you want to use [LaTeX](https://www.latex-project.org/) with the Marklar Markdown editor, keep in mind that it only supports LaTeX **blocks**:
 
@@ -236,6 +240,7 @@ To keep a unified style across our different courses, use the [Slide Template](h
 In case you need to highlight something, focus on using the following colors that reflect the colors in the CodingNomads logo:
 
 - **primary:** sea blue
+
   - Hex value: `#0071BD`
   - RGB code: `rbg(0, 113, 189)`
   - HSV: `hsv(204.13, 100%, 74.12%)`
@@ -251,8 +256,8 @@ The general theme settings for our brand communication could reflect these two c
 
 When creating any content that includes fonts outside of our learning platform (e.g. Video Slides), stick to using the following fonts:
 
-* `Barlow condensed` (titles)
-* `Source Sans Pro` (text)
-* `Roboto Mono` (code)
+- `Barlow condensed` (titles)
+- `Source Sans Pro` (text)
+- `Roboto Mono` (code)
 
 You can [download them all from here](https://drive.google.com/drive/u/0/folders/1AGnyJpEBqBqQyW_UJLY8cVWCWh1wCoQN).

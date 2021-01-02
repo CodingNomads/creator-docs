@@ -89,7 +89,7 @@ Use Markdown to create code blocks.
 
 Use Markdown to create in-line-code snippets:
 
-```
+```md
 `my_funct()`
 ```
 
@@ -97,11 +97,12 @@ In the platform's **HTML editor** you can create them like this: `<code>your_cod
 
 ## [`<iframe>` Embeds](https://getbootstrap.com/docs/4.0/utilities/embed/)
 
-```
+```html
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="your_embed_url" allowfullscreen></iframe>
 </div>
 ```
+
 ## [LaTeX](https://www.latex-project.org/help/documentation/) Fomulas
 
 Use LaTeX block syntax in Markdown:

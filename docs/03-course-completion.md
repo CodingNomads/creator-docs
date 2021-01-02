@@ -13,7 +13,7 @@ Bulk editing for already existing resources can also be done in the same setting
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xDhgDdngGIY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# Access Restriction
+## Access Restriction
 
 When students sign up for a free trial of our learning platform they should get access to some but not all resources. Learn here how to change the access settings for individual resources in your course:
 

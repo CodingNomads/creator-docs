@@ -141,9 +141,9 @@ You can change your default text editor in your user profile's cogwheel drop-dow
 
 The **Marklar** editor allows you to:
 
-* **write** your content in Markdown
-* **preview** with a simple button click
-* **add images** through a straightforward file upload
+- **write** your content in Markdown
+- **preview** with a simple button click
+- **add images** through a straightforward file upload
 
 The video below shows how to change your text editor preferences. Follow the instructions, but instead of selecting the "Plain Text Editor", choose the new **"Marklar"** editor option. The rest of the process is the same. After you selected the correct editor, your page editing should like like this:
 
