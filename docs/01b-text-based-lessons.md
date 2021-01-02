@@ -80,7 +80,7 @@ When you use visual aids, use the **three-step-principle** to introduce them, as
 
 **Use note blocks:** You can use Note and Info blocks as visual aids as well as to highlight important information that might be a little aside of the main text.
 
-If you write course content for the platform, then check out the description on [Information and Alert Boxes](11-platform-style#information-and-alert-boxes). If you are writing a tutorial for the CodingNomads blog, then use [Markdown quotes](https://guides.github.com/features/mastering-markdown/#syntax) (`>`) instead.
+If you write course content for the platform, then check out the description on [Information and Alert Boxes](11-platform-style/#information-and-alert-boxes). If you are writing a tutorial for the CodingNomads blog, then use [Markdown quotes](https://guides.github.com/features/mastering-markdown/#syntax) (`>`) instead.
 
 ## Code Blocks
 
