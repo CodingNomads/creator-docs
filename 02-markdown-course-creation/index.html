@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <meta name="author" content="Martin Breuss">
+  
   <link rel="shortcut icon" href="../img/favicon.ico">
   <title>Using Markdown - CN Course Creator Docs</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
   
   <script>
     // Current page data
@@ -24,7 +25,7 @@
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
   <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
@@ -35,6 +36,7 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
         <a href=".." class="icon icon-home"> CN Course Creator Docs</a>
         <div role="search">
@@ -45,104 +47,88 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="..">Overview</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../00-basics/">Course Creation Basics</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../01-content-guidelines/">Content Creation Guidelines</a>
-	    </li>
-          
-            <li class="toctree-l1 current">
-		
-    <a class="current" href="./">Using Markdown</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#markdown-course-creation">Markdown Course Creation</a></li>
-    
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Overview</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../00-basics/">Course Creation Basics</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../01-content-guidelines/">Content Creation Guidelines</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Using Markdown</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#headings">Headings</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#table-of-contents-toc">Table Of Contents (TOC)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#links">Links</a>
         <ul>
-        
-            <li><a class="toctree-l3" href="#headings">Headings</a></li>
-        
-            <li><a class="toctree-l3" href="#table-of-contents-toc">Table Of Contents (TOC)</a></li>
-        
-            <li><a class="toctree-l3" href="#links">Links</a></li>
-        
-            <li><a class="toctree-l3" href="#code-and-code-blocks">Code And Code Blocks</a></li>
-        
-            <li><a class="toctree-l3" href="#example-markdown-rendering">Example Markdown Rendering</a></li>
-        
-            <li><a class="toctree-l3" href="#text-editor-choice">Text Editor Choice</a></li>
-        
+    <li class="toctree-l3"><a class="reference internal" href="#auto-expand-text-snippets">Auto-Expand Text Snippets</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#script-replace-all-your-markdown-links">Script-Replace All Your Markdown Links</a>
+    </li>
         </ul>
-    
-
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#code-and-code-blocks">Code And Code Blocks</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#example-markdown-rendering">Example Markdown Rendering</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#text-editor-choice">Text Editor Choice</a>
+    </li>
     </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../03-course-completion/">Course Completion Settings</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../04-creating-quizzes/">Creating Quiz Resources</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../05-quiz-question-types/">Creating Quiz Questions</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../06-creating-assignments/">Creating Assignments</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../07-creating-labs/">Creating Lab Challenges</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../08-creating-videos/">Creating Video Lessons</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../09-forum/">CodingNomads Forum</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../10-publishing-pipeline/">Publishing Pipeline</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../11-platform-style/">Style Guide</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../12-snippets-reference/">Style Snippets Quick Reference</a>
-	    </li>
-          
-        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../03-course-completion/">Course Completion Settings</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../01b-text-based-lessons/">Creating Text-Based Lessons</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../04-creating-quizzes/">Creating Quiz Resources</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../05-quiz-question-types/">Creating Quiz Questions</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../06-creating-assignments/">Creating Assignments</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../07-creating-labs/">Creating Lab Challenges</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../08-creating-videos/">Creating Video Lessons</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../09-forum/">CodingNomads Forum</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../10-publishing-pipeline/">Publishing Pipeline</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../11-platform-style/">Style Guide</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../12-snippets-reference/">Style Snippets Quick Reference</a>
+                    </li>
+                </ul>
       </div>
-      &nbsp;
+    </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -170,6 +156,7 @@
       
     </li>
   </ul>
+  
   <hr/>
 </div>
           <div role="main">
@@ -193,20 +180,18 @@
 <p>Generally I suggest to break up lessons that are too long into multiple pages. However, there are some situations when having a lot of content on a page may be unavoidable or even make sense, e.g. as a <em>reference</em>. In this cases it is helpful to provide the reader with a clickable <strong>table of contents</strong>.</p>
 <p><a href="https://github.com/CodingNomads/utils/blob/master/add_toc.py">This script</a> allows you to add a <strong>clickable TOC</strong> to the top of your Markdown documents. Note that it requires the external package called <code>md-toc</code> that you can install it via the included <code>Pipfile</code> or <code>requirements.txt</code>.</p>
 <p>If you execute the script inside of the top-level folder of your course content, it will add a linked TOC to the top of each file that contains the following <strong>HTML comment</strong>:</p>
-<pre><code class="html">&lt;!--TOC--&gt;
+<pre><code class="language-html">&lt;!--TOC--&gt;
 </code></pre>
-
 <p>It doesn't matter where it appears, but it needs to be part of a file for the script to pick it up, analyze the headings, and create the TOC.</p>
 <p><strong>Note:</strong> The HTML comment does <em>not</em> get removed and the script does <em>not</em> check whether a TOC already exists. If you run it multiple times <em>you will get multiple TOCs</em>. Therefore, I suggest to run the script <em>once</em> at the <em>end</em> of your content creation workflow before adding the content to the course on the learning platform.</p>
 <p>You can find the script and more information in <a href="https://github.com/CodingNomads/utils/#add_tocpy">the dedicated <code>utils</code> repo</a> on GitHub.</p>
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
 <p>We want to make sure that all links open up in a new tab when clicked, to avoid students from accidentally navigating away from the course. Markdown syntax doesn't have an equivalent to HTML's <code>target="_blank"</code> which would allow to open links in new tabs. Therefore, please use real HTML for creating links in your Markdown docs:</p>
-<pre><code class="html">This is &lt;a href=&quot;http://your.url&quot; target=&quot;_blank&quot;&gt;a link&lt;/a&gt;
+<pre><code class="language-html">This is &lt;a href=&quot;http://your.url&quot; target=&quot;_blank&quot;&gt;a link&lt;/a&gt;
 </code></pre>
-
 <h3 id="auto-expand-text-snippets">Auto-Expand Text Snippets<a class="headerlink" href="#auto-expand-text-snippets" title="Permanent link">&para;</a></h3>
 <p>To avoid having to type this out for every link, you can use <strong>Code Snippets</strong> functionality on your text editor. In fact, you can use code snippets for just about anything you'd have to otherwise type out. E.g. if you are using <strong>VSCode</strong> you can use the following for your <em>Code -&gt; Preferences -&gt; User Snippets -&gt; <code>markdown.json</code></em>:</p>
-<pre><code class="json">{
+<pre><code class="language-json">{
     &quot;Create New Tab Link&quot;: {
         &quot;prefix&quot;: [&quot;tab&quot;, &quot;tab-link&quot;, &quot;tl&quot;],
         &quot;body&quot;: [&quot;&lt;a href='${1:https://}' target='_blank'&gt;${2:description}&lt;/a&gt;&quot;],
@@ -264,7 +249,6 @@
     }
 }
 </code></pre>
-
 <p>Alternatively, you can also us your operating systems' Keyboard Text Replace functionality. If you're on MacOS it looks like this:</p>
 <p><img alt="MacOS Text Replace Screenshot" src="../imgs/tabs-auto-expand.png" /></p>
 <p>Same as with the code snippets in your text editor, this setting allows you to type e.g. <code>tl</code> in your browser where you are editing your Markdown, and it will auto-expand to <code>&lt;a href="" target="_blank"&gt;&lt;/a&gt;</code>. Then you only need to paste the URL and the link text.</p>
@@ -311,7 +295,7 @@
     
   </div>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
         </div>
@@ -321,7 +305,7 @@
 
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
           <a href="https://github.com/CodingNomads/creator-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
@@ -337,6 +321,11 @@
     <script>var base_url = '..';</script>
     <script src="../js/theme.js" defer></script>
       <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
 </body>
 </html>
