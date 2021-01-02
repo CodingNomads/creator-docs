@@ -11,4 +11,6 @@ This resource provides helpful guidelines for creating courses on CodingNomads' 
 
 ![CodingNomads Logo](imgs/cn_logo.png)
 
-**Note:** These docs are a living document and in their early stages. We are thankful for your contribution in making them better.
+## Blog Posts
+
+If you are writing a tutorial for the [CodingNomads Blog](https://codingnomads.co/blog/), then you can skip most of the content and focus on the page that describes how to [Create Text-Based Lessons](01b-text-based-lessons.md).
