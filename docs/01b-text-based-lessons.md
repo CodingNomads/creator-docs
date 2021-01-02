@@ -2,7 +2,13 @@
 
 This section offers guidelines and tips for creating text-based lessons, tutorials, and blog posts for CodingNomads. This information can also help you to improve your technical writing skills.
 
-The following points will guide you in structuring your technical writing to improve readability and help readers to learn from your material.
+After reading this article, you'll know how to:
+
+- **Structure** your articles to make them impactful
+- **Format** your text for increased readability
+- Use the right **tone** to address your audience
+
+This article will guide you in structuring your technical writing so you can improve its readability and help readers to learn better from your content.
 
 ## Three-Step Principle
 
@@ -18,15 +24,21 @@ Assume that your students are new to _everything_ you're teaching them. Followin
 
 ## Introduction
 
-**Sell your article:** Every lesson should start with a quick introduction. This is _especially_ important for longer-form blog posts and tutorial articles. Your tutorials need to have a concise introduction that gives readers a good idea of what they will know to do after reading your text.
+**Sell your article:** Every lesson should start with a quick introduction. This is _especially_ important for longer-form blog posts and tutorial articles. Your tutorials need to have a concise introduction that gives readers a good idea of what they will know to do after reading your text. Lists are a great tool for introductions. For example:
 
-Attention is fleeting in the online world. Think of your introduction as an advertisement for your article. Keep it concise and make it clear to your readers what they'll gain from committing to reading your text.
+> After reading this article, you'll know how to:
+>
+> - **Structure** your articles to make them impactful
+> - **Format** your text for increased readability
+> - Use the right **tone** to address your audience
+
+Attention is fleeting in the online world. Think of your introduction as an _advertisement_ for your article. Keep it concise and make it clear to your readers what they'll gain from committing to reading your text.
 
 ## Conclusion
 
 **Recap your article:** Your text should end with a quick recap of what students gained by reading over it. If you are writing a self-standing tutorial or blog post, this conclusion needs to have its own heading.
 
-Many potential readers jump right to the conclusion of an article to decide whether they want to read it or not. Use it to recap the most important take-aways from your text. Make it actionable and focus on telling readers what they learned by reading your article.
+Many potential readers jump right to the conclusion of an article to decide whether they want to read it or not. Use it to recap the most important take-aways from your text. Make it actionable and focus on telling readers what they learned by reading your article. Use lists and focus on a similar form as you used for your introduction.
 
 ## Sum-Up Paragraphs
 
