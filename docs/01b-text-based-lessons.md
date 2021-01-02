@@ -112,7 +112,7 @@ If you notice you're putting a word into quotation marks, reconsider what it is 
 
 ---
 
-# Formatting
+## Formatting
 
 The following points provide guidance on how to format your technical writing for consistency and readability.
 
@@ -146,7 +146,7 @@ Using the word instead of the number itself tends to be perceived as more profes
 
 ---
 
-# Tone
+## Tone
 
 The following points give guidance on what to look out for in terms of tone and word choice when creating technical tutorials.
 
@@ -190,7 +190,7 @@ Try to help your students by giving them a stable ground to stand on. Be support
 
 ---
 
-# Images
+## Images
 
 Make sure to only use image material that is copyright-free. Here are a couple of resources where you can find free stock images:
 
