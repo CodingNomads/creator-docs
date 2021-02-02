@@ -152,6 +152,20 @@ Avoid bolding whole sentences in your text, unless they are paragraph headings. 
 
 As with bolding, avoid putting emphasis at too many words at once.
 
+### In-Line Code
+
+**Format code:** You're writing technical tutorials, so it is especially important that you're clear about what words refer to code, such as functions, methods, attributes, or code libraries. Use single backticks (`\``) in Markdown to correctly format your code.
+
+Generally, use the code you refer to as a **noun** in your sentence:
+
+> ✅ With Python's `print()`, you can display output to your console.
+
+Avoid adding the type of code structure you're talking about after each mention of it:
+
+> ⚠️ With Python's `print()` function, you can display...
+
+You can be explicit and use this construct if you are making a point about `print()` being a function, but avoid overusing it.
+
 ### Numbers
 
 **Spell out numbers:** When mentioning a number in your text, use the word for it instead of writing down the number:
