@@ -92,7 +92,7 @@ If you write course content for the platform, then check out the description on 
 
 If possible, then keep the code blocks short in order to highlight what readers should focus on. When you build a project, take small steps and show the changes to the code often to avoid too many changes at once.
 
-If you show your readers a longer code block with
+If you show your readers a longer code block with multiple changes, then make sure to address and explain all the changes explicitly, preferably using a list.
 
 ### Lists
 
@@ -116,7 +116,7 @@ These sentence constructs are distracting in technical writing and should be avo
 
 **Avoid slashes between words:** Another writing habit to swear off of for technical writing is using multiple words separated by slashes, e.g.:
 
-> In this tutorial/blog post, you'll learn...
+> ❌ In this tutorial/blog post, you'll learn...
 
 This breaks the reader's flow and creates more confusion than it resolves. Students come to technical tutorials for clear and concise information. If you notice that you are using slashed words, take a moment to consider what is the most accurate word to use. Then delete the others.
 
@@ -140,7 +140,7 @@ The following points provide guidance on how to format your technical writing fo
 
 **Use bolding for new terms:** Bolding should be used to introduce new terms and highlight key phrases:
 
-> In this section, you'll learn about **iteration**.
+> ✅ In this section, you'll learn about **iteration**.
 
 Avoid bolding whole sentences in your text, unless they are paragraph headings. Bolding too many words at once reduces the visibility of the most important terms that you want to highlight.
 
@@ -148,7 +148,7 @@ Avoid bolding whole sentences in your text, unless they are paragraph headings. 
 
 **Use emphasis to put focus on a word:** Emphasis should be used to put _emphasis_ on a word:
 
-> There is _so_ much to learn.
+> ✅ There is _so_ much to learn.
 
 As with bolding, avoid putting emphasis at too many words at once.
 
@@ -156,7 +156,7 @@ As with bolding, avoid putting emphasis at too many words at once.
 
 **Spell out numbers:** When mentioning a number in your text, use the word for it instead of writing down the number:
 
-> Below, you'll see three examples...
+> ✅ Below, you'll see three examples...
 
 Using the word instead of the number itself tends to be perceived as more professional.
 
@@ -166,7 +166,7 @@ Using the word instead of the number itself tends to be perceived as more profes
 
 > ✅ Code comments can help your future self, as well as other programmers, to understand your code. Use descriptive variable names in combination with explanatory code comments, where <a href='https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/' target='_blank'>code tells you how and comments tell you why</a>. This is the most effective way to write user-friendly code.
 
-If possible, use the title of the linked resource in your sentence. This makes it easy to read and absorb for your audience. Another example:
+If possible, use the title of the linked resource in your sentence. This makes your sentence more user-friendly to read and retain. Another example:
 
 > ✅ If you are still new to Python, or you need a refresher, check out the <a href='https://codingnomads.co/courses/python-bootcamp-online/' target='_blank'>Python Software Engineering</a> course.
 
@@ -204,7 +204,13 @@ _Always_ talk directly to your readers. Imagine that you are talking to a specif
 
 ### Word Choice
 
-**Choose your words wisely:** Avoid using words such as "easy", "straightforward", "obvious" etc. Your students are new to this topic, and what might seem easy to you, won't necessarily be easy for them. To avoid alienating students, rather use words such as "user-friendly".
+**Choose your words wisely:** Avoid using words such as:
+
+- ❌ "easy"
+- ❌ "straightforward"
+- ❌ "obvious" etc.
+
+Your students are new to this topic, and what might seem easy to you, won't necessarily be easy for them. To avoid alienating students, rather use words such as ✅ "user-friendly".
 
 ### Personality
 
