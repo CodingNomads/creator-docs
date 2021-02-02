@@ -164,11 +164,11 @@ Using the word instead of the number itself tends to be perceived as more profes
 
 **Write text-based links**: Avoid using words such as "click here" or just "link" to as the link text for external sources. Instead, make the link text a natural part of your sentence:
 
-> Code comments can help your future self, as well as other programmers, to understand your code. Use descriptive variable names in combination with explanatory code comments, where <a href='https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/' target='_blank'>code tells you how and comments tell you why</a>. This is the most effective way to write user-friendly code.
+> ✅ Code comments can help your future self, as well as other programmers, to understand your code. Use descriptive variable names in combination with explanatory code comments, where <a href='https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/' target='_blank'>code tells you how and comments tell you why</a>. This is the most effective way to write user-friendly code.
 
 If possible, use the title of the linked resource in your sentence. This makes it easy to read and absorb for your audience. Another example:
 
-> If you are still new to Python, or you need a refresher, check out the <a href='https://codingnomads.co/courses/python-bootcamp-online/' target='_blank'>Python Software Engineering</a> course.
+> ✅ If you are still new to Python, or you need a refresher, check out the <a href='https://codingnomads.co/courses/python-bootcamp-online/' target='_blank'>Python Software Engineering</a> course.
 
 Using natural link texts makes your paragraphs better readable and immediately clarifies where the link will take them.
 
@@ -186,9 +186,21 @@ The following points give guidance on what to look out for in terms of tone and 
 
 **Use "you" instead of "we":** Talking directly to your student makes them feel personally addressed and more engaged:
 
-> The project you'll be working with...
+> ✅ The project you'll be working with...
 
 _Always_ talk directly to your readers. Imagine that you are writing your content for a specific person.
+
+### Hidden Plural
+
+Some commonly used sentence constructs are a **hidden use of 'we'**. You should avoid them as well. For example, don't use "let's ...":
+
+> ❌ Let's next learn how to ...
+
+Instead, keep your focus on the reader and keep them in the center of attention:
+
+> ✅ Next, you'll learn how to ...
+
+_Always_ talk directly to your readers. Imagine that you are talking to a specific person that is sitting in front of you.
 
 ### Word Choice
 
@@ -222,9 +234,9 @@ Try to help your students by giving them a stable ground to stand on. Be support
 
 Make sure to only use image material that is copyright-free. Here are a couple of resources where you can find free stock images:
 
-* [https://pixabay.com/](https://pixabay.com/)
-* [https://publicdomainvectors.org/en/](https://publicdomainvectors.org/en/)
-* [https://www.pexels.com/](https://www.pexels.com/)
-* [https://unsplash.com/](https://unsplash.com/)
+- [https://pixabay.com/](https://pixabay.com/)
+- [https://publicdomainvectors.org/en/](https://publicdomainvectors.org/en/)
+- [https://www.pexels.com/](https://www.pexels.com/)
+- [https://unsplash.com/](https://unsplash.com/)
 
 Please add attribution, for example in `alt` texts, if that makes sense.
