@@ -154,8 +154,8 @@ As with bolding, avoid putting emphasis at too many words at once.
 
 ### In-Line Code
 
-**Format code:** You're writing technical tutorials, so it is especially important that you're clear about what words refer to code, such as functions, methods, attributes, or code libraries. Use single backticks (`\``) in Markdown to correctly format your code.
-
+**Format code:** You're writing technical tutorials, so it is especially important that you're clear about what words refer to code, such as functions, methods, attributes, or code libraries. Use single backticks (\`) in Markdown to correctly format your code.
+<img alt="alt" class="img-responsive cn_image" src="https://github.com/CodingNomads/static/blob/main/python/imgs/.png?raw=true">
 Generally, use the code you refer to as a **noun** in your sentence:
 
 > ✅ With Python's `print()`, you can display output to your console.
