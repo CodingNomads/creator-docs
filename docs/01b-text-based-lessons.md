@@ -160,6 +160,18 @@ As with bolding, avoid putting emphasis at too many words at once.
 
 Using the word instead of the number itself tends to be perceived as more professional.
 
+### Links
+
+**Write text-based links**: Avoid using words such as "click here" or just "link" to as the link text for external sources. Instead, make the link text a natural part of your sentence:
+
+> Code comments can help your future self, as well as other programmers, to understand your code. Use descriptive variable names in combination with explanatory code comments, where <a href='https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/' target='_blank'>code tells you how and comments tell you why</a>. This is the most effective way to write user-friendly code.
+
+If possible, use the title of the linked resource in your sentence. This makes it easy to read and absorb for your audience. Another example:
+
+> If you are still new to Python, or you need a refresher, check out the <a href='https://codingnomads.co/courses/python-bootcamp-online/' target='_blank'>Python Software Engineering</a> course.
+
+Using natural link texts makes your paragraphs better readable and immediately clarifies where the link will take them.
+
 ---
 
 ## Tone
