@@ -112,3 +112,5 @@ $$content$$
 ```
 
 Use [Moodle's LaTeX syntax](https://docs.moodle.org/38/en/Using_TeX_Notation) with the WYSIWYG editor.
+
+Have a nice day!
