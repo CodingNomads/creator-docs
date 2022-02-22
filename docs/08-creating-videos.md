@@ -343,4 +343,8 @@ Generally, our team will handle uploading the videos to our platform. If you are
 
 ![responsive video setting](imgs/video_time_embed_responsive.png)
 
-You should also check **Autoplay** for your videos.
+You should also check **Autoplay** for your videos, and make sure that the **Speed** setting is checked:
+
+![embed video speed setting](imgs/video_speed.png)
+
+This setting allows learners to change the video speed when watching your lessons.
