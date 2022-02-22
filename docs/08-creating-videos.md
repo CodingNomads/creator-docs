@@ -345,6 +345,6 @@ Generally, our team will handle uploading the videos to our platform. If you are
 
 You should also check **Autoplay** for your videos, and make sure that the **Speed** setting is checked:
 
-![embed video speed setting](imgs/video_speed.png)
+![embed video speed setting](imgs/video-speed.png)
 
 This setting allows learners to change the video speed when watching your lessons.
