@@ -2,21 +2,22 @@ site_name: CN Course Creator Docs
 site_description: Information on how to create engaging course content.
 site_author: Martin Breuss
 nav:
-  - Overview: README.md
-  - Course Creation Basics: 00-basics.md
-  - Content Creation Guidelines: 01-content-guidelines.md
-  - Using Markdown: 02-markdown-course-creation.md
-  - Course Completion Settings: 03-course-completion.md
-  - Creating Text-Based Lessons: 01b-text-based-lessons.md
-  - Creating Quiz Resources: 04-creating-quizzes.md
-  - Creating Quiz Questions: 05-quiz-question-types.md
-  - Creating Assignments: 06-creating-assignments.md
-  - Creating Lab Challenges: 07-creating-labs.md
-  - Creating Video Lessons: 08-creating-videos.md
-  - CodingNomads Forum: 09-forum.md
-  - Publishing Pipeline: 10-publishing-pipeline.md
-  - Style Guide: 11-platform-style.md
-  - Style Snippets Quick Reference: 12-snippets-reference.md
+  - Overview: 0-temp.md
+  # - Overview: README.md
+  # - Course Creation Basics: 00-basics.md
+  # - Content Creation Guidelines: 01-content-guidelines.md
+  # - Using Markdown: 02-markdown-course-creation.md
+  # - Course Completion Settings: 03-course-completion.md
+  # - Creating Text-Based Lessons: 01b-text-based-lessons.md
+  # - Creating Quiz Resources: 04-creating-quizzes.md
+  # - Creating Quiz Questions: 05-quiz-question-types.md
+  # - Creating Assignments: 06-creating-assignments.md
+  # - Creating Lab Challenges: 07-creating-labs.md
+  # - Creating Video Lessons: 08-creating-videos.md
+  # - CodingNomads Forum: 09-forum.md
+  # - Publishing Pipeline: 10-publishing-pipeline.md
+  # - Style Guide: 11-platform-style.md
+  # - Style Snippets Quick Reference: 12-snippets-reference.md
 
 theme:
   name: readthedocs
