@@ -3,6 +3,7 @@ site_description: Information on how to create engaging course content.
 site_author: Martin Breuss
 nav:
   - Custom Markdown Syntax: temp.md
+  - Contributing Workflow: contributing.md
   # - Overview: README.md
   # - Course Creation Basics: 00-basics.md
   # - Content Creation Guidelines: 01-content-guidelines.md
