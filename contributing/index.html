@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Martin Breuss" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Contributing Workflow - CN Course Creator Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Contributing Workflow";
+        var mkdocs_page_input_path = "contributing.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> CN Course Creator Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../temp/">Custom Markdown Syntax</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Contributing Workflow</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#making-contributions">Making Contributions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#project-structure">Project Structure</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#yaml-front-matter-metadata">YAML Front Matter Metadata</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#index-files">Index Files</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#adding-a-new-lesson">Adding a New Lesson</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#historical-releases">Historical Releases</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">CN Course Creator Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Contributing Workflow</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/CodingNomads/creator-docs/edit/master/docs/contributing.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="contributing-workflow">Contributing Workflow<a class="headerlink" href="#contributing-workflow" title="Permanent link">&para;</a></h1>
+<p><strong>Do not edit/update/commit directly to the main branch</strong></p>
+<p>The content repositories reflects what's on the platform as of the last commit to <code>main</code> or <code>master</code>.</p>
+<h2 id="making-contributions">Making Contributions<a class="headerlink" href="#making-contributions" title="Permanent link">&para;</a></h2>
+<p>If you have any contributions you'd like to make, please create a branch, make your changes, and submit a pull request. We'll review it and merge it if it looks good.</p>
+<p>If you have small typos or errors that would be quick to fix, you can create a pull request, but you also let us know directly by reaching out via Discord or creating an issue in the repository.</p>
+<p>If you have any other questions, or proposals for larger changes, feel free to create an issue in the repository to kick off a discussion.</p>
+<h3 id="project-structure">Project Structure<a class="headerlink" href="#project-structure" title="Permanent link">&para;</a></h3>
+<p>We use an exporting tool to create a directory structure with markdown files which is what you see here. The way the course is structured is as follows:</p>
+<pre><code>Course_Name
+│   index.md
+│   001_1_section_1
+│   │   index.md
+│   │   001_lesson.md
+│   │   002_lesson.md
+│   │   ...
+│   002_2_section_2
+│   │   index.md
+│   │   001_lesson.md
+│   │   002_lesson.md
+│   │   ...
+│   ...
+...
+
+</code></pre>
+<p>Everything outside the <code>Course_Name</code> folder doesn't get included on the platform. I.e. this document, the <code>README.md</code>, doesn't get included. Feel free to add any other files or folders you need to help manage the course content or provide additional resources for instructors.</p>
+<p>The first three numbers and underscore (<code>001_</code>) on the sections and lessons are there to keep them in order in the file system. They are added by the exporting tool and aren't included in the course content on the platform. That's why it may seem redundant to have <code>001_1...</code> and <code>002_2...</code> in the folder names, but it's the way that the export tool ensures that the files are in the same order as what appears in the platform.</p>
+<h3 id="yaml-front-matter-metadata">YAML Front Matter Metadata<a class="headerlink" href="#yaml-front-matter-metadata" title="Permanent link">&para;</a></h3>
+<p>All markdown files have metadata at the top of the file in the form of a YAML front matter block. YAML front matter is a convention to add metadata to markdown files in <a href="https://yaml.org/">YAML format</a> between two sets of three dashes <code>---</code> at the top of the file. Here's an example of what it looks like:</p>
+<pre><code class="language-markdown">---
+title: &quot;Lesson Title&quot;
+description: &quot;A description of the lesson&quot;
+...
+
+---
+
+Lesson content goes here...
+</code></pre>
+<p>In general you don't need to touch the metadata, but you may want to adjust a title or description to better fit the content of the lesson, in which case you can do so in the front matter.</p>
+<p><strong>Don't touch other parts of the front matter unless you know what you're doing.</strong></p>
+<p>Since the title is declared in the front matter, don't add an <code>h1</code> (<code>#</code>) at the top of the markdown file. The title will be automatically added to the page by the platform. Start the content with a brief introduction and then start the headings with <code>h2</code> tags (<code>##</code>).</p>
+<h3 id="index-files">Index Files<a class="headerlink" href="#index-files" title="Permanent link">&para;</a></h3>
+<p>The course folder has an <code>index.md</code> file which only has front matter and has the course metadata. This metadata has information like the course title, the description, the course image, the course duration, and more. Each section also has a similar <code>index.md</code> file.</p>
+<h3 id="adding-a-new-lesson">Adding a New Lesson<a class="headerlink" href="#adding-a-new-lesson" title="Permanent link">&para;</a></h3>
+<p>If you want to add a new lesson, you can do so by creating a new markdown file in the appropriate section folder. All you need to add in terms of front matter is <code>slug</code>, <code>title</code>, <code>metaTitle</code>, <code>description</code>, <code>metaDescription</code>, and <code>keywords</code> and <code>type</code>.</p>
+<p>Since the lessons are numbered, to get your lesson to show up in the right order, you can add another number to the numbering system. Since this is a file system, assume alphabetical order.</p>
+<ul>
+<li><code>001</code></li>
+<li><code>002</code></li>
+<li><code>003</code></li>
+<li><code>0033</code></li>
+<li><code>004</code></li>
+<li><code>005</code></li>
+<li>...</li>
+</ul>
+<p>For example, if you're adding a lesson between <code>005_</code> and <code>006_</code>, you could name your file <code>0055_New Lesson Title.md</code>.</p>
+<h2 id="historical-releases">Historical Releases<a class="headerlink" href="#historical-releases" title="Permanent link">&para;</a></h2>
+<p>For historical purposes, the content repos also contains three releases (so far):</p>
+<ul>
+<li><strong>Legacy Platform Content</strong>: The content as it was last published on the legacy platform (Moodle).</li>
+<li><strong>SEO Migration Content</strong>: The content as it was updated in preparation for publish on the new platform.</li>
+<li><strong>Initial Course Export Content</strong>: The content exported from the new platform as it existed post-initial-publish.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../temp/" class="btn btn-neutral float-left" title="Custom Markdown Syntax"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/CodingNomads/creator-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../temp/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

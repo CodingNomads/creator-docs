@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Martin Breuss" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Content Creation Guidelines - CN Course Creator Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Content Creation Guidelines";
+        var mkdocs_page_input_path = "01-content-guidelines.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> CN Course Creator Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../temp/">Custom Markdown Syntax</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contributing/">Contributing Workflow</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">CN Course Creator Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Content Creation Guidelines</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/CodingNomads/creator-docs/edit/master/docs/01-content-guidelines.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="content-creation-guidelines">Content Creation Guidelines<a class="headerlink" href="#content-creation-guidelines" title="Permanent link">&para;</a></h1>
+<h2 id="naming-convention">Naming Convention<a class="headerlink" href="#naming-convention" title="Permanent link">&para;</a></h2>
+<p><strong>Course Structure Naming Convention</strong>: Our courses are structured as follows:</p>
+<pre><code class="language-text">course
+└── module
+    └── section
+        └── chapter
+            └── lesson
+</code></pre>
+<p>Let's describe what each of them represent:</p>
+<ul>
+<li><strong>Course</strong>: This is your full course, e.g. "Python Programming"</li>
+<li><strong>Module</strong>: Modules are a collection of Sections that logically belong together and could be taken together. Sections are grouped together using <a href="../11-platform-style/#module-tags">Module Tags</a></li>
+<li><strong>Section</strong>: Also sometimes called <em>"Section Topics"</em> or even just <em>"Topics"</em> in Moodle 🙄. These are the collapsible sections and used for high-level structuring of the content</li>
+<li><strong>Chapter</strong>: You create chapters by sub-dividing sections using <a href="../11-platform-style/#section-dividers">Section Dividers</a></li>
+<li><strong>Lesson</strong>: Each activity or resource that you create in your course (e.g. a Page or a Quiz) can be referred to as a "lesson". This is the smallest unit that will be visible in the course overview</li>
+</ul>
+<p><img alt="Diagram of course structure components" src="../imgs/course_structure_diagram.png" /></p>
+<p>In this diagram you saw a visual description of the different elements as they appear on our platform.</p>
+<hr />
+<h2 id="structure">Structure<a class="headerlink" href="#structure" title="Permanent link">&para;</a></h2>
+<p>The following points give guidance on how to structure your technical writing to improve readability and help readers to learn from your material.</p>
+<h3 id="three-step-principle">Three-Step Principle<a class="headerlink" href="#three-step-principle" title="Permanent link">&para;</a></h3>
+<p><strong>Follow the three-step-teaching principle:</strong> Many have recommended to use this structure, and we do too.</p>
+<ol>
+<li><strong>Intro:</strong> Tell your students what information you will give them</li>
+<li><strong>Main:</strong> Give them that info</li>
+<li><strong>Recap:</strong> Tell them what information they just got</li>
+</ol>
+<p>Attempt to follow these three simple steps even for short sections. Our brain processes new information in small chunks, and it needs a proper introduction and recap to fully absorb new topics. Assume that your students are new to <em>everything</em> you're teaching them. Following the outlined steps above helps them with remembering the content you're teaching. It makes learning more fun and effective for your students.</p>
+<h3 id="sum-up-paragraphs">Sum-Up Paragraphs<a class="headerlink" href="#sum-up-paragraphs" title="Permanent link">&para;</a></h3>
+<p><strong>Sum up paragraphs:</strong> Try to sum up the paragraph's entire content in the first sentence. You can think of it as a mini-intro and mini-conclusion all in one piece. The body of the paragraph that follows explains the concept in more detail and gives readers a chance to linger and absorb the information.</p>
+<h3 id="parallel-structure">Parallel Structure<a class="headerlink" href="#parallel-structure" title="Permanent link">&para;</a></h3>
+<p><strong>Use parallel structure for lists and headings:</strong> Clarity is important for technical writing. Always use parallel structure when creating list items as well as headings. Parallel structure means to use the same sentence structure for each new piece of information. E.g. I wrote all the headings on this page as nouns. Each paragraph that introduces new information begins with a verb and attempts to convey the main idea of that paragraph. Parallel structure is very powerful in making your content look well structured, it can help yourself to plan out a topic clearly, and it helps your students to easier absorb the information.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EEd28yNXe5E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h3 id="flat-toc">Flat TOC<a class="headerlink" href="#flat-toc" title="Permanent link">&para;</a></h3>
+<p><strong>Use a flat TOC structure:</strong> Aim on using main headings and one additional level of sub-headings, not more. To correctly integrate with our platform, that means using <code>&lt;h3&gt;</code> headings as your main headings, and <code>&lt;h4&gt;</code> as sub-headings.</p>
+<h3 id="text-blocks">Text Blocks<a class="headerlink" href="#text-blocks" title="Permanent link">&para;</a></h3>
+<p><strong>Use text blocks:</strong> Each paragraph should have some visible body to it. If a text contains multiple paragraphs that consist of only one or two sentences the text may at first sight appear less professional. No need to be too strict about this, but something to keep in mind. On the other hand, also avoid making your paragraphs <em>too</em> blocky.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C01jEn0YZP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h3 id="visual-aids">Visual Aids<a class="headerlink" href="#visual-aids" title="Permanent link">&para;</a></h3>
+<p><strong>Use visual aids:</strong> Using graphs, code blocks, or also fun memes and images can help to lighten the information load on your students. Technical content can get overwhelming. You're encouraged to loosen it up and give a break to your readers' eyes by introducing visual aids. If a text section seems long and dry to yourself, it will also seems so to your students. Pop in some images to change the visual pace.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yYBcETEXFBo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h3 id="list-paragraph-headings">List &amp; Paragraph Headings<a class="headerlink" href="#list-paragraph-headings" title="Permanent link">&para;</a></h3>
+<p><strong>Use list and paragraph headlines:</strong> Bolded words or short sentences at the beginning of a list item or a paragraph help to introduce a topic. They guide your students' eyes and assist in easier absorbing relevant information. Always try to keep them in parallel structure.</p>
+<hr />
+<h2 id="formatting">Formatting<a class="headerlink" href="#formatting" title="Permanent link">&para;</a></h2>
+<p>The following points provide guidance on how to format your technical writing for consistency and readability.</p>
+<h3 id="consistency">Consistency<a class="headerlink" href="#consistency" title="Permanent link">&para;</a></h3>
+<p><strong>Be consistent:</strong> Just like in programming, there are many correct ways of formatting your content. Please adhere to this style guide to allow consistency across all CodingNomads courses. And, most importantly, be consistent within your own course materials.</p>
+<h3 id="bolding">Bolding<a class="headerlink" href="#bolding" title="Permanent link">&para;</a></h3>
+<p><strong>Use bolding for new terms:</strong> Bolding should be used to introduce new terms and highlight key phrases (e.g. "In this section, you'll learn about <strong>iteration</strong>")</p>
+<h3 id="emphasis">Emphasis<a class="headerlink" href="#emphasis" title="Permanent link">&para;</a></h3>
+<p><strong>Use emphasis to put focus on a word:</strong> Emphasis should be used to, well, put <em>emphasis</em> on a word or part of a sentence (e.g. "There is <em>so</em> much to learn")</p>
+<h3 id="you-vs-we">'You' vs. 'We'<a class="headerlink" href="#you-vs-we" title="Permanent link">&para;</a></h3>
+<p><strong>Use "you" instead of "we":</strong> Talking directly to your student makes them feel personally addressed and more engaged. (e.g. "The project you'll be working with...")</p>
+<hr />
+<h2 id="tone">Tone<a class="headerlink" href="#tone" title="Permanent link">&para;</a></h2>
+<p>The following points give guidance on what to look out for in terms of tone and word choice when creating technical tutorials.</p>
+<h3 id="general-tone">General Tone<a class="headerlink" href="#general-tone" title="Permanent link">&para;</a></h3>
+<p><strong>Be friendly, supportive, and professional:</strong> Our students should feel that they are chatting with a knowledgeable and encouraging friend who is invested in their progress and also happens to be an expert on the subject matter.</p>
+<h3 id="word-choice">Word Choice<a class="headerlink" href="#word-choice" title="Permanent link">&para;</a></h3>
+<p><strong>Choose your words wisely:</strong> Avoid using words such as "easy", "straightforward", "obvious" etc. Your students are new to this topic, and what might seem easy to you, won't necessarily be easy for them. To avoid alienating students, rather use words such as "user-friendly".</p>
+<h3 id="personality">Personality<a class="headerlink" href="#personality" title="Permanent link">&para;</a></h3>
+<p><strong>Show your personality as an author:</strong> No one likes to read or watch a sterile tutorial when learning something new and challenging. Add your personal touches--be it xkcd comics, memes, or dad jokes. Of course only if that's how you roll. Don't force it, but feel free to make it fun both for yourself while writing and recording, as well as for your students when going through the course. Most of all, allow yourself to be authentic instead of sterile.</p>
+<h3 id="mistakes">Mistakes<a class="headerlink" href="#mistakes" title="Permanent link">&para;</a></h3>
+<p><strong>Show the instructor is also a mere mortal:</strong> It helps students to know that you also make mistakes, and that also for you some concepts were daunting at first or difficult to grasp.</p>
+<h3 id="support">Support<a class="headerlink" href="#support" title="Permanent link">&para;</a></h3>
+<p><strong>Show that you're supportive:</strong> Programming topics are tough and often confusing for newcomers. It can easily feel overwhelming, even after making some progress, when the door opens up wider and ever more information starts flooding in. Try to help your students by giving them a stable ground to stand on. Be supportive and encourage them to keep learning.</p>
+<h3 id="fun">Fun<a class="headerlink" href="#fun" title="Permanent link">&para;</a></h3>
+<p><strong>Feel free to have some fun!</strong> We want our students to enjoy our courses as much as possible and laugh as often as possible! :)</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7TtIHUrcuzY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<hr />
+<h2 id="images">Images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h2>
+<p>Make sure to only use image material that is copyright-free. Here are a couple of resources where you can find free stock images:</p>
+<ul>
+<li><a href="https://pixabay.com/">https://pixabay.com/</a></li>
+<li><a href="https://publicdomainvectors.org/en/">https://publicdomainvectors.org/en/</a></li>
+<li><a href="https://www.pexels.com/">https://www.pexels.com/</a></li>
+<li><a href="https://unsplash.com/">https://unsplash.com/</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/CodingNomads/creator-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

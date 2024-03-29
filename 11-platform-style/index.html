@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Martin Breuss" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Consistently Styled Course Content - CN Course Creator Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Consistently Styled Course Content";
+        var mkdocs_page_input_path = "11-platform-style.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> CN Course Creator Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../temp/">Custom Markdown Syntax</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contributing/">Contributing Workflow</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">CN Course Creator Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Consistently Styled Course Content</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/CodingNomads/creator-docs/edit/master/docs/11-platform-style.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="consistently-styled-course-content">Consistently Styled Course Content<a class="headerlink" href="#consistently-styled-course-content" title="Permanent link">&para;</a></h1>
+<p><strong>Note:</strong> <strong>Use Markdown</strong> to create your course content. It will make most of the below information irrelevant to you. If you feel the need to style more individually, <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/"><strong>use Bootstrap classes</strong></a>. Bootstrap is included in the theme we're using. Only if neither fulfills your creative urges, read on for more fine-grained styling.</p>
+<h2 id="objective">Objective<a class="headerlink" href="#objective" title="Permanent link">&para;</a></h2>
+<p>We want <strong>unified and adaptable styling</strong> across all courses on the whole site.</p>
+<ul>
+<li><strong>Simple</strong>: Simple elements are favored over complex ones, because they are easier to set up and maintain</li>
+<li><strong>Reusable</strong>: Allow Bootstrap to style your page, it's already included.</li>
+<li><strong>Maintainable</strong>: Through consistent and simple structure, we can adapt styles centrally and avoid unnecessary effort and potential misalignment</li>
+</ul>
+<p>Therefore, we ask you to use <strong>simple HTML</strong> (e.g. through using the Markdown editor or the WYSIWYG editor) and customize the resulting HTML only minimally, with the following custom components:</p>
+<h2 id="custom-components">Custom Components<a class="headerlink" href="#custom-components" title="Permanent link">&para;</a></h2>
+<p>Additional custom components you can use when creating and editing courses.</p>
+<h3 id="course-overview-page-additional-styling">Course Overview Page Additional Styling<a class="headerlink" href="#course-overview-page-additional-styling" title="Permanent link">&para;</a></h3>
+<p>The following adaptations should be used to make the course overview page styled consistently and easier readable for students.</p>
+<h4 id="section-dividers">Section Dividers<a class="headerlink" href="#section-dividers" title="Permanent link">&para;</a></h4>
+<p>To improve the visual flow in a course overview, you can add colored bars to further break up the content of a section.</p>
+<p><img alt="dividers" src="../imgs/dividers.png" /></p>
+<p><strong>Section Dividers:</strong> These can be used to sub-divide a section into <strong>chapters</strong> and give it a relevant chapter heading. Create a "Tag Resource" on the platform, and add the following HTML code in the HTML editor:</p>
+<pre><code class="language-html">&lt;h5 class=&quot;section-divider&quot;&gt;Relevant Chapter Heading&lt;/h5&gt;
+</code></pre>
+<p><strong>Assignment Dividers:</strong> To indicate to students that the following materials require their own input, we use differently-colored dividers for a section that consist of instructions for mini-projects, quizzes, etc. You can create such a divider also using the "Tag Resource" and entering the following HTML code in the HTML editor:</p>
+<pre><code class="language-html">&lt;h5 class=&quot;section-assignment&quot;&gt;Assignments&lt;/h5&gt;
+</code></pre>
+<h4 id="module-tags">Module Tags<a class="headerlink" href="#module-tags" title="Permanent link">&para;</a></h4>
+<p>Module tags in the "Summary" of each section help students stay on track and visually bundle multiple sections logically together.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/evwWenaThmM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>Switch off blue and yellow tags for better visual grouping.</p>
+<p>Blue:</p>
+<pre><code class="language-html">&lt;div class=&quot;d-flex flex-row-reverse&quot;&gt;
+  &lt;span class=&quot;badge badge-pill badge-primary&quot;&gt; Module 1 &lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Yellow:</p>
+<pre><code class="language-html">&lt;div class=&quot;d-flex flex-row-reverse&quot;&gt;
+  &lt;span class=&quot;badge badge-pill badge-warning&quot;&gt; Module 2 &lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+<p><img alt="Tags for grouping sections together into modules" src="../imgs/module-tags.png" /></p>
+<hr />
+<h3 id="page-resources-individual-styling">Page Resources Individual Styling<a class="headerlink" href="#page-resources-individual-styling" title="Permanent link">&para;</a></h3>
+<p>The following custom style elements should be considered when creating written documentation for your course content.</p>
+<h4 id="headings">Headings<a class="headerlink" href="#headings" title="Permanent link">&para;</a></h4>
+<p>In the <strong>visual editor</strong>, use editor-provided headings levels:</p>
+<ul>
+<li>"Heading (large)" option creates <code>&lt;h3&gt;</code> element</li>
+<li>"Heading (medium)" option creates <code>&lt;h4&gt;</code> element</li>
+<li>"Heading (small)" option creates <code>&lt;h5&gt;</code> element</li>
+</ul>
+<p><strong>Don't apply any editor styles to your headings.</strong> We want to avoid individually bolded headings. Avoiding individual styles allows us to increase heading size, font-weight, etc. centrally through SCSS.</p>
+<p>In <strong>Markdown</strong>, use the equivalent heading levels that the visual editor uses:</p>
+<ul>
+<li>Top-level heading: <code>###</code></li>
+<li>Second-level heading: <code>####</code></li>
+<li>Lowest-level heading: <code>#####</code></li>
+</ul>
+<h4 id="information-and-alert-boxes">Information And Alert Boxes<a class="headerlink" href="#information-and-alert-boxes" title="Permanent link">&para;</a></h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TSSkUdmHl2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><img alt="Bootstrap alert box for information" src="../imgs/alert-box-preview.png" /></p>
+<p>Add disclaimers as <code>alert alert-warning</code> boxes when a new concept is mentioned but not yet deeply explained. You want to avoid students feeling like this (student quote):</p>
+<blockquote>
+<p>you know, I think my main issue is if I get to a page, and the way it is written implies I should already understand it, but it is completely new and unfamiliar. It has me worrying that it is obvious and I am the only one just not getting it.</p>
+</blockquote>
+<p>To avoid this frustration, use the Bootstrap alert box with a short note for criticial information and gotchas. E.g.:</p>
+<blockquote>
+<p>"Just read over this for now, we'll dig deeper into it in a later section."</p>
+</blockquote>
+<pre><code class="language-html">&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;
+  &lt;strong&gt;Note:&lt;/strong&gt; Take care to avoid xyz.
+&lt;/div&gt;
+</code></pre>
+<p>Use <code>alert alert-info</code> to include additional information e.g. on external resources that can lead students further onwards. E.g.:</p>
+<pre><code class="language-html">&lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot;&gt;
+  &lt;strong&gt;Info:&lt;/strong&gt; The first bug was a real bug!
+&lt;/div&gt;
+</code></pre>
+<p>The Bootstrap alert boxes also help to visually break up a long piece of content by highlighting an important section.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3REbh9xr5lE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><strong>Note:</strong> If you need to use <strong>multiple lines</strong> in your alert boxes, use <code>&lt;br&gt;</code> tags to create newlines (instead of using <code>&lt;p&gt;</code> tags). This results in nicer-looking alert boxes without additional spacing.</p>
+<h4 id="code-blocks">Code Blocks<a class="headerlink" href="#code-blocks" title="Permanent link">&para;</a></h4>
+<p>Wrap code snippets into triple-backticks. This works both in Markdown as well as the visual editor:</p>
+<pre><code>```python
+print("your code here")
+```
+</code></pre>
+<p><strong>Note:</strong> Syntax highlighting can sometimes be broken. This might be annoying and we hope to find a fix that'll solve it site-wise.</p>
+<h4 id="in-line-code">In-line Code<a class="headerlink" href="#in-line-code" title="Permanent link">&para;</a></h4>
+<p><strong>In Markdown</strong>, simply wrap your in-line code into <a href="https://daringfireball.net/projects/markdown/syntax#code"><strong>single backticks</strong></a>.</p>
+<p><strong>In the visual editor</strong>, there is no button for marking a section of text as inline code. Therefore, you will need to switch to the <em>HTML editor</em> and wrap in-line code snippets into <code>&lt;code&gt;your_code()&lt;/code&gt;</code> tags.</p>
+<h4 id="embedded-resources">Embedded Resources<a class="headerlink" href="#embedded-resources" title="Permanent link">&para;</a></h4>
+<p>For external videos that are not hosted on our vimeo account and e.g. external code playgrounds, use <a href="https://getbootstrap.com/docs/4.0/utilities/embed/">Bootstraps responsive embed class</a>:</p>
+<pre><code class="language-html">&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+  &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;your_embed_url&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h4>
+<pre><code class="language-html">&lt;div class=&quot;jumbotron resources&quot;&gt;
+  &lt;h1&gt;Resources&lt;/h1&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Paste the above HTML snippet into the HTML editor of your resource. Next, switch back to the WYSIWYG editor view and copy-paste your resource links into the body of the jumbotron. Style them as a bullet point list. Result:</p>
+<p><img alt="resources" src="../imgs/resources.png" /></p>
+<h4 id="quotes">Quotes<a class="headerlink" href="#quotes" title="Permanent link">&para;</a></h4>
+<p>To highlight a section of your documentation as a quote, please use the <a href="https://getbootstrap.com/docs/4.0/content/typography/#blockquotes">Bootstrap-provided blockquote HTML</a>:</p>
+<pre><code class="language-html">&lt;blockquote class=&quot;blockquote text-right&quot;&gt;
+  &lt;p class=&quot;mb-0&quot;&gt;
+    [...] programs must be written for people to read, and only incidentally for
+    machines to execute.
+  &lt;/p&gt;
+  &lt;footer class=&quot;blockquote-footer&quot;&gt;
+    Abelson &amp; Sussman in
+    &lt;a
+      href=&quot;https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-7.html#%_chap_Temp_4&quot;
+      &gt;&lt;cite title=&quot;Structure and Interpretation of Computer Programs&quot;
+        &gt;Structure and Interpretation of Computer Programs&lt;/cite
+      &gt;&lt;/a
+    &gt;
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+</code></pre>
+<p>We are applying some custom CSS to it to make the quotes look like shown below:</p>
+<p><img alt="An adapted Bootstrap blockquote" src="../imgs/blockquote.png" /></p>
+<h4 id="latex">LaTeX<a class="headerlink" href="#latex" title="Permanent link">&para;</a></h4>
+<p>If you use LaTeX for formulas, you'll have an easier time using the WYSIWYG editor. You can render block and inline LaTeX by following <a href="https://docs.moodle.org/38/en/Using_TeX_Notation">moodle's LaTeX syntax</a>. Here's <a href="../02-markdown-course-creation/#text-editor-choice">how to switch your editor</a>.</p>
+<p>If you want to use <a href="https://www.latex-project.org/">LaTeX</a> with the Marklar Markdown editor, keep in mind that it only supports LaTeX <strong>blocks</strong>:</p>
+<pre><code class="language-md">$$content$$
+</code></pre>
+<p>E.g. in order to display the following formula correctly rendered like so:</p>
+<p><img alt="rendered LaTeX formula" src="../imgs/latex_rendered.png" /></p>
+<p>You can write the following in the Marklar editor:</p>
+<pre><code class="language-md">$$\text{EMA}_{t}=[V_t \times (\frac d {1+n})] + \text{EMA}_y \times [1 - \frac d {1+n}]$$
+</code></pre>
+<p>For more information, refer to <a href="https://www.latex-project.org/help/documentation/">the LaTeX docs</a>.</p>
+<p><strong>Note:</strong> If you need to use a couple of single-line LaTeX in a row, e.g. for explaining the contents of a formula in more detail, we suggest to use a <a href="https://getbootstrap.com/docs/4.0/content/tables/">Bootstrap table</a> for easier viewing, e.g.:</p>
+<pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+      &lt;td&gt;$$\text{EMA}_t=\text{EMA today}$$&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+      &lt;td&gt;$$p_t=\text{price today}$$&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+      &lt;td&gt;$$\text{EMA}_y=\text{EMA yesterday}$$&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<p>Renders to:</p>
+<p><img alt="LaTeX blocks in a table" src="../imgs/latex_table.png" /></p>
+<h2 id="video-slides"><a href="../08-creating-videos/#slides">Video Slides</a><a class="headerlink" href="#video-slides" title="Permanent link">&para;</a></h2>
+<p>To keep a unified style across our different courses, use the <a href="https://docs.google.com/presentation/d/15HOG5TyGKWfvP4ZcouKAb3CYhMWqdhLa75Np59jh7Iw/edit?usp=sharing">Slide Template</a> (or corresponding <a href="https://drive.google.com/drive/u/0/folders/1m6jfPz803rZMDp1vLDKQz72nCLzek_UA">Keynote Theme</a>). More information in the dedicated <a href="../08-creating-videos/#slides">Video Slides</a> section.</p>
+<h2 id="brand-colors">Brand Colors<a class="headerlink" href="#brand-colors" title="Permanent link">&para;</a></h2>
+<p>In case you need to highlight something, focus on using the following colors that reflect the colors in the CodingNomads logo:</p>
+<ul>
+<li>
+<p><strong>primary:</strong> sea blue</p>
+</li>
+<li>
+<p>Hex value: <code>#0071BD</code></p>
+</li>
+<li>RGB code: <code>rbg(0, 113, 189)</code></li>
+<li>
+<p>HSV: <code>hsv(204.13, 100%, 74.12%)</code></p>
+</li>
+<li>
+<p><strong>secondary:</strong> sunset yellow (outermost)</p>
+</li>
+<li>Hex value: <code>#FBB03B</code></li>
+<li>RGB code: <code>rbg(251, 176, 59)</code></li>
+<li>HSV: <code>hsv(36.56, 76.49%, 98.43%)</code></li>
+</ul>
+<p>The general theme settings for our brand communication could reflect these two colors as <strong>primary</strong> (sea-blue) and <strong>secondary</strong> (sunset-yellow) brand colors.</p>
+<h2 id="fonts"><a href="https://drive.google.com/drive/u/0/folders/1AGnyJpEBqBqQyW_UJLY8cVWCWh1wCoQN">Fonts</a><a class="headerlink" href="#fonts" title="Permanent link">&para;</a></h2>
+<p>When creating any content that includes fonts outside of our learning platform (e.g. Video Slides), stick to using the following fonts:</p>
+<ul>
+<li><code>Barlow condensed</code> (titles)</li>
+<li><code>Source Sans Pro</code> (text)</li>
+<li><code>Roboto Mono</code> (code)</li>
+</ul>
+<p>You can <a href="https://drive.google.com/drive/u/0/folders/1AGnyJpEBqBqQyW_UJLY8cVWCWh1wCoQN">download them all from here</a>.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/CodingNomads/creator-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

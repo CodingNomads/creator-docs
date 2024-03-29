@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Martin Breuss" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Custom Markdown Syntax - CN Course Creator Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Custom Markdown Syntax";
+        var mkdocs_page_input_path = "temp.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> CN Course Creator Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Custom Markdown Syntax</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contributing/">Contributing Workflow</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">CN Course Creator Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Custom Markdown Syntax</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/CodingNomads/creator-docs/edit/master/docs/temp.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>Until these creator docs recieve a complete overhaul, here is a quick guide to formatting content for the new platform <a href="https://codingnomads.com">https://codingnomads.com</a></p>
+<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
+<p>Links use standard markdown syntax and will open in new tab by default:</p>
+<pre><code class="language-markdown">[Google](https://google.com)
+</code></pre>
+<p>Links can add an optional title that is displayed as a tool-tip:</p>
+<pre><code class="language-markdown">[Google](https://google.com &quot;The best search engine for privacy&quot;)
+</code></pre>
+<h2 id="images">Images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h2>
+<p>Images can be single-tag and require a <code>src</code> attribute:</p>
+<pre><code class="language-markdown">[[img src=&quot;http://www.image.com/location&quot;]]
+</code></pre>
+<p>Images support <code>alt</code> and <code>title</code> attributes (and <em>should</em> include them), values must be wrapped in double quotes:</p>
+<pre><code class="language-markdown">[[img src=&quot;http://www.image.com/location&quot; alt=&quot;image alt text&quot; title=&quot;The Title of This Image&quot;]]
+</code></pre>
+<p>Image tags can be written in a multi-line format, and also support a <code>link</code> attribute which opens in a new tab by default:</p>
+<pre><code class="language-markdown">[[img
+    src=&quot;http://www.image.com/location&quot;
+    alt=&quot;image alt text&quot; 
+    title=&quot;The Title of This Image&quot;
+    link=&quot;https://example.com&quot;
+]]
+</code></pre>
+<h2 id="videos">Videos<a class="headerlink" href="#videos" title="Permanent link">&para;</a></h2>
+<p>Videos are single-tag (no closing tag) and require an <code>id</code> attribute:</p>
+<pre><code class="language-markdown">[[video id=&quot;77834767&quot;]]
+</code></pre>
+<p>For <strong>Video</strong> lessons, please include the lesson description in the body above the embedded video:</p>
+<pre><code class="language-markdown">In this video you'll explore a Spring Batch demo project with practical batch processing techniques, taking raw CSV data and processing it for storage in a MySQL database.
+
+[[video id=&quot;764391747&quot;]]
+</code></pre>
+<p><img alt="video with description" src="../imgs/video.png" /></p>
+<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
+<p>Notes require an opening and closing tag, and can contain markdown inside.</p>
+<pre><code class="language-markdown">[[note]]
+This is a note.
+[This is a link](http://example.com).
+This is still the same paragraph.
+[[/note]]
+</code></pre>
+<p><img alt="note block single paragraph" src="../imgs/note-1.png" /></p>
+<p>Blank lines = a new paragraph in the rendered html:</p>
+<pre><code class="language-markdown">[[note]]
+This is a note [This is a link](http://example.com).
+
+Hello, _this is Markdown_ and a second paragraph!
+
+This is the third paragraph of a note with **bold**.
+[[/note]]
+</code></pre>
+<p><img alt="note block multiple paragraphs" src="../imgs/note-2.png" /></p>
+<h2 id="alerts">Alerts<a class="headerlink" href="#alerts" title="Permanent link">&para;</a></h2>
+<p>Alerts work the same way:</p>
+<pre><code class="language-markdown">[[alert]]
+This is an _alert_!
+[[/alert]]
+</code></pre>
+<p><img alt="sample alert block" src="../imgs/alert.png" /></p>
+<h2 id="learn-by-doing">Learn by Doing<a class="headerlink" href="#learn-by-doing" title="Permanent link">&para;</a></h2>
+<p>Require an opening and closing tags:</p>
+<pre><code class="language-markdown">[[learn-by-doing]]
+**Package:** `com.codingnomads.example`
+
+This is a Learn by Doing!
+
+[[/learn-by-doing]]
+</code></pre>
+<p><img alt="sample alert block" src="../imgs/learn-by-doing.png" /></p>
+<h2 id="external-resources">External Resources<a class="headerlink" href="#external-resources" title="Permanent link">&para;</a></h2>
+<p>For link blocks to additional resources:</p>
+<pre><code class="language-markdown">[[external-resource src=&quot;https://example.com&quot; link-text=&quot;Example Resource&quot;]]
+
+Checkout this _incredible_ resource!
+
+[[/external-resource]]
+</code></pre>
+<p><img alt="sample alert block" src="../imgs/external-resource.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../contributing/" class="btn btn-neutral float-right" title="Contributing Workflow">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/CodingNomads/creator-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+      <span><a href="../contributing/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

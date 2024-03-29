@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Martin Breuss" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Markdown Course Creation - CN Course Creator Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Markdown Course Creation";
+        var mkdocs_page_input_path = "02-markdown-course-creation.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> CN Course Creator Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../temp/">Custom Markdown Syntax</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contributing/">Contributing Workflow</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">CN Course Creator Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Markdown Course Creation</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/CodingNomads/creator-docs/edit/master/docs/02-markdown-course-creation.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="markdown-course-creation">Markdown Course Creation<a class="headerlink" href="#markdown-course-creation" title="Permanent link">&para;</a></h1>
+<p>We advise to use <strong>Markdown</strong> for writing your course content. It is simple to read and write, introduces consistency through limiting options, and makes the content easy to re-use in other contexts. Write in Markdown rather than using a text editing program such as MS Word or Google Docs.</p>
+<p>It is also better to use Markdown than directly creating your content inside our learning platform. The latter can sometimes be a drag due to the content box window sizing and other platform-related small annoyances. It might also make the content too site-specific and difficult to transition elsewhere. We've made this mistake before, and would prefer to avoid accruing more technical debt.</p>
+<p><strong>Note:</strong> If you still want to use the <strong>platform-included WYSIWYG editor</strong> (called "Atto"), please check out <a href="./#text-editor-choice">how to choose your text editor</a> and make sure to thoroughly read over and <strong>stick with our <a href="../11-platform-style/">Style Guide</a></strong>.</p>
+<p>Here is a screencast that explains how to add your Markdown content to a resource in our platform:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fNW_77QC67E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="headings">Headings<a class="headerlink" href="#headings" title="Permanent link">&para;</a></h2>
+<p>As a small deviation from keeping your content as platform-agnostic as possible, you should use lower-level headings as your page's main headings:</p>
+<ul>
+<li><strong>Main Headings:</strong> Use <code>&lt;h3&gt;</code> (or <code>###</code> in Markdown) as your page content's main heading.</li>
+<li><strong>Sub-Headings:</strong> Use <code>&lt;h4&gt;</code> (or <code>####</code> in Markdown) as your page content's sub-headings.</li>
+</ul>
+<p>The course content will be integrated in our platform, and higher-level headings are reserved for course and page headings, which need to be entered in a different entry form.</p>
+<h2 id="table-of-contents-toc">Table Of Contents (TOC)<a class="headerlink" href="#table-of-contents-toc" title="Permanent link">&para;</a></h2>
+<p>Generally I suggest to break up lessons that are too long into multiple pages. However, there are some situations when having a lot of content on a page may be unavoidable or even make sense, e.g. as a <em>reference</em>. In this cases it is helpful to provide the reader with a clickable <strong>table of contents</strong>.</p>
+<p><a href="https://github.com/CodingNomads/utils/blob/master/add_toc.py">This script</a> allows you to add a <strong>clickable TOC</strong> to the top of your Markdown documents. Note that it requires the external package called <code>md-toc</code> that you can install it via the included <code>Pipfile</code> or <code>requirements.txt</code>.</p>
+<p>If you execute the script inside of the top-level folder of your course content, it will add a linked TOC to the top of each file that contains the following <strong>HTML comment</strong>:</p>
+<pre><code class="language-html">&lt;!--TOC--&gt;
+</code></pre>
+<p>It doesn't matter where it appears, but it needs to be part of a file for the script to pick it up, analyze the headings, and create the TOC.</p>
+<p><strong>Note:</strong> The HTML comment does <em>not</em> get removed and the script does <em>not</em> check whether a TOC already exists. If you run it multiple times <em>you will get multiple TOCs</em>. Therefore, I suggest to run the script <em>once</em> at the <em>end</em> of your content creation workflow before adding the content to the course on the learning platform.</p>
+<p>You can find the script and more information in <a href="https://github.com/CodingNomads/utils/#add_tocpy">the dedicated <code>utils</code> repo</a> on GitHub.</p>
+<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
+<p>We want to make sure that all links open up in a new tab when clicked, to avoid students from accidentally navigating away from the course. Markdown syntax doesn't have an equivalent to HTML's <code>target="_blank"</code> which would allow to open links in new tabs. Therefore, please use real HTML for creating links in your Markdown docs:</p>
+<pre><code class="language-html">This is &lt;a href=&quot;http://your.url&quot; target=&quot;_blank&quot;&gt;a link&lt;/a&gt;
+</code></pre>
+<h3 id="auto-expand-text-snippets">Auto-Expand Text Snippets<a class="headerlink" href="#auto-expand-text-snippets" title="Permanent link">&para;</a></h3>
+<p>To avoid having to type this out for every link, you can use <strong>Code Snippets</strong> functionality on your text editor. In fact, you can use code snippets for just about anything you'd have to otherwise type out. E.g. if you are using <strong>VSCode</strong> you can use the following for your <em>Code -&gt; Preferences -&gt; User Snippets -&gt; <code>markdown.json</code></em>:</p>
+<pre><code class="language-json">{
+    &quot;Create New Tab Link&quot;: {
+        &quot;prefix&quot;: [&quot;tab&quot;, &quot;tab-link&quot;, &quot;tl&quot;],
+        &quot;body&quot;: [&quot;&lt;a href='${1:https://}' target='_blank'&gt;${2:description}&lt;/a&gt;&quot;],
+        &quot;description&quot;: &quot;HTML link base that opens link in a new tab.&quot;
+    },
+    &quot;Create Markdown Image Link For Docs&quot;: {
+        &quot;prefix&quot;: [&quot;im&quot;, &quot;img-int&quot;, &quot;ii&quot;],
+        &quot;body&quot;: [&quot;![${2:alt}](../imgs/${1}.png)&quot;],
+        &quot;description&quot;: &quot;Docs internal Markdown image link.&quot;
+    },
+    &quot;Create Alert Box&quot;: {
+        &quot;prefix&quot;: [&quot;ab&quot;, &quot;alert-note&quot;, &quot;note&quot;],
+        &quot;body&quot;: [&quot;&lt;div class='alert alert-warning' role='alert'&gt;&quot;,
+                 &quot;    &lt;strong&gt;Note:&lt;/strong&gt; ${1}&quot;,
+                 &quot;&lt;/div&gt;&quot;],
+        &quot;description&quot;: &quot;Create Bootstrap alert-warning Note box.&quot;
+    },
+    &quot;Create Info Box&quot;: {
+        &quot;prefix&quot;: [&quot;ib&quot;, &quot;alert-info&quot;, &quot;info&quot;],
+        &quot;body&quot;: [&quot;&lt;div class='alert alert-info' role='alert'&gt;&quot;,
+                 &quot;    &lt;strong&gt;Info:&lt;/strong&gt; ${1}&quot;,
+                 &quot;&lt;/div&gt;&quot;],
+        &quot;description&quot;: &quot;Create Bootstrap alert-info Info box.&quot;
+    },
+    &quot;Create kbd&quot;: {
+        &quot;prefix&quot;: [&quot;kbd&quot;],
+        &quot;body&quot;: [&quot;&lt;kbd&gt;${1}&lt;/kbd&gt;&quot;],
+        &quot;description&quot;: &quot;Create an HTML 'input' tag.&quot;
+    },
+    &quot;Create Python Snippet&quot;: { // Or adapt to another programming language...
+        &quot;prefix&quot;: [&quot;py&quot;, &quot;ps&quot;, &quot;python&quot;],
+        &quot;body&quot;: [&quot;```python&quot;,
+            &quot;$1&quot;,
+            &quot;```&quot;],
+        &quot;description&quot;: &quot;Create a Python code snippet in Markdown.&quot;
+    },
+    &quot;Insert Bash Command(s)&quot;: {
+        &quot;prefix&quot;: &quot;ib&quot;,
+        &quot;body&quot;: [
+            &quot;```bash&quot;,
+            &quot;$ $1&quot;,
+            &quot;```&quot;
+        ],
+        &quot;description&quot;: &quot;Insert a bash code snippet&quot;
+    },
+    &quot;Create code HTML for info boxes&quot;: {
+        &quot;prefix&quot;: [&quot;cb&quot;],
+        &quot;body&quot;: [&quot;&lt;code&gt;${1}&lt;/code&gt;&quot;],
+        &quot;description&quot;: &quot;Create an HTML 'code' tag.&quot;
+    },
+    &quot;Add TOC indicator comment&quot;: {
+        &quot;prefix&quot;: [&quot;toc&quot;],
+        &quot;body&quot;: [&quot;&lt;!--TOC--&gt;\n&quot;],
+        &quot;description&quot;: &quot;Create an indicator that a TOC should be added to this page.&quot;
+    }
+}
+</code></pre>
+<p>Alternatively, you can also us your operating systems' Keyboard Text Replace functionality. If you're on MacOS it looks like this:</p>
+<p><img alt="MacOS Text Replace Screenshot" src="../imgs/tabs-auto-expand.png" /></p>
+<p>Same as with the code snippets in your text editor, this setting allows you to type e.g. <code>tl</code> in your browser where you are editing your Markdown, and it will auto-expand to <code>&lt;a href="" target="_blank"&gt;&lt;/a&gt;</code>. Then you only need to paste the URL and the link text.</p>
+<p>Code Snippets have the advantage that you can define where your cursor is placed and generally offer more possibilities to fine-tune the snippets. If you can, use your text editor's snippet functionality.</p>
+<h3 id="script-replace-all-your-markdown-links">Script-Replace All Your Markdown Links<a class="headerlink" href="#script-replace-all-your-markdown-links" title="Permanent link">&para;</a></h3>
+<p>You can also use <a href="https://github.com/CodingNomads/utils#replace_linkspy">this script</a> to replace all normal Markdown links with HTML links that open up in new tabs. If you make sure to remember to use this script before publishing, you can write Markdown links as you're used to. Before uploading your content to our platform, you then only need to run the script. This may be useful if you already have content written that uses normal Markdown links and can save you some editing time.</p>
+<h2 id="code-and-code-blocks">Code And Code Blocks<a class="headerlink" href="#code-and-code-blocks" title="Permanent link">&para;</a></h2>
+<p>Code snippets wrapped in single backticks as well as code blocks with triple-backticks are correctly rendered by the platform's Markdown engine.</p>
+<h2 id="example-markdown-rendering">Example Markdown Rendering<a class="headerlink" href="#example-markdown-rendering" title="Permanent link">&para;</a></h2>
+<p>When entering your content in Markdown, it will look like that during input:</p>
+<p><img alt="Entering content in Markdown format" src="../imgs/editor_markdown_view.png" /></p>
+<p>The above Markdown text will correctly render in our platform like so:</p>
+<p><img alt="Rendered Markdown content on our platform" src="../imgs/editor_rendered_view.png" /></p>
+<h2 id="text-editor-choice">Text Editor Choice<a class="headerlink" href="#text-editor-choice" title="Permanent link">&para;</a></h2>
+<p>You can change your default text editor in your user profile's cogwheel drop-down <code>Editor Preferences</code>. Choose <code>Marklar</code> for the easiest Markdown editing functionality.</p>
+<p>The <strong>Marklar</strong> editor allows you to:</p>
+<ul>
+<li><strong>write</strong> your content in Markdown</li>
+<li><strong>preview</strong> with a simple button click</li>
+<li><strong>add images</strong> through a straightforward file upload</li>
+</ul>
+<p>The video below shows how to change your text editor preferences. Follow the instructions, but instead of selecting the "Plain Text Editor", choose the new <strong>"Marklar"</strong> editor option. The rest of the process is the same. After you selected the correct editor, your page editing should like like this:</p>
+<p><img alt="Editing a document with the Marklar editor" src="../imgs/editor_marklar.png" /></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GeHyN-TZ5JY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/CodingNomads/creator-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

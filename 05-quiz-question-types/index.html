@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Martin Breuss" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Quiz Questions - CN Course Creator Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Quiz Questions";
+        var mkdocs_page_input_path = "05-quiz-question-types.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> CN Course Creator Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../temp/">Custom Markdown Syntax</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contributing/">Contributing Workflow</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">CN Course Creator Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Quiz Questions</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/CodingNomads/creator-docs/edit/master/docs/05-quiz-question-types.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="quiz-questions">Quiz Questions<a class="headerlink" href="#quiz-questions" title="Permanent link">&para;</a></h1>
+<p>Quiz questions are primarily meant as a chance for students to become active in their learning process, after having read or watched some content passively. They serve as quick check-in points and don't need to be too complex. Keep the questions and question types simple, both for your own and your students benefit. The main value of quizzes are:</p>
+<ul>
+<li><strong>Activate</strong>: Switching from passive to active learning</li>
+<li><strong>Double-Check</strong>: Self-check-in for students whether they understood the main concepts from a section</li>
+</ul>
+<p>This is why we suggest to use <strong>multiple-choice</strong> or <strong>true/false</strong> questions. We have experimented with using other question types of the many that our learning platform offers, but keeping it simple has proven to be the best way to go in terms of quizzes.</p>
+<h2 id="importing-quiz-questions">Importing Quiz Questions<a class="headerlink" href="#importing-quiz-questions" title="Permanent link">&para;</a></h2>
+<p>Moodle supports a text format called <code>.gift</code> for importing quiz questions. The format is human-readable, which makes it a good option to create your quiz questions alongside your Markdown content, and keep them version-controlled, but be able to quickly add them to your course on the platform.</p>
+<p>The screencast below walks you over how to create questions in this format and upload them to the platform:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zdrdh_Y7HWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>To learn more, read over this concise <a href='http://buypct.com/gift_reference.pdf' target='_blank'>GIFT Reference sheet</a>, or download it from the <a href='https://drive.google.com/drive/folders/1m6jfPz803rZMDp1vLDKQz72nCLzek_UA' target='_blank'>Resources Folder</a>.</p>
+<p>Here are two example questions written in <code>.gift</code> format, the first one being a multiple-choice question, the second one a True/False one:</p>
+<pre><code class="language-text">Do you like this format? {
+    ~no
+    ~maybe
+    =YESSSS!
+}
+
+Uploading quiz questions saves some of your valuable time {TRUE}
+</code></pre>
+<p>Check out the screencast and the linked reference sheet to learn about additional options, such as question feedback, answer percentages, question names, and automatically adding questions to categories.</p>
+<p>If you want to create your questions directly on the platform instead of going down the <code>.gift</code> route, keep reading below for some information to keep in mind.</p>
+<hr />
+<h2 id="multiple-choice-and-single-choice-questions">Multiple Choice and Single Choice Questions<a class="headerlink" href="#multiple-choice-and-single-choice-questions" title="Permanent link">&para;</a></h2>
+<p>Choose the appropriate type when creating a question. Make sure that the following settings are applied:</p>
+<ul>
+<li><strong>Adaptive Mode</strong>: Grading should be set to <em>Adaptive Mode</em> to allow students to check whether they have the correct answer or not. Quizzes are meant as a learning experience, not as a test</li>
+<li><strong>No Penalties</strong>: Make sure that penalties for wrong answers are set to <code>0</code>. Again, quizzes are for learning and you don't want to penalized students for getting it wrong</li>
+<li><strong>Percentages</strong>: You will have to assign a percentage of the total point score to each answer. Make sure that these add up to 100%. E.g. if you are creating a true/false question, the correct answer should get <code>100%</code> and the wrong answer should get <code>0%</code>. If you are creating a multiple choice question, the percentages of all correct answers should add up to <code>100%</code>. If there are 3 correct answers, choose the <code>33.33%</code> setting for each of them</li>
+</ul>
+<p>As mentioned above, attempt to keep the quizzes simple. Most of the time using these two question types will be enough to give your students the experience of switching into a simple active learning mode, and helping them to check up on how much they were paying attention in the previous section.</p>
+<h2 id="code-runner-questions">Code Runner Questions<a class="headerlink" href="#code-runner-questions" title="Permanent link">&para;</a></h2>
+<p>Code Runner questions allow your students to write and execute code snippets, to test their practical understanding and train their coding skills. The screencast below explains how to set up a Code Runner question for your Quiz resource:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1wMXtM0RSxs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="feedback-resource">Feedback Resource<a class="headerlink" href="#feedback-resource" title="Permanent link">&para;</a></h2>
+<p>The Feedback Resource is not exactly a quiz, but it prompts students to answer questions as well. It is a <em>different resource type</em> that has a specific template we want you to use. After creating the Feedback resource, you can select the template in the "Templates" tab:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IBOKVGzO534" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/CodingNomads/creator-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
